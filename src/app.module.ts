@@ -5,9 +5,16 @@ import { ConfigModule } from '@nestjs/config';
 import { PrismaModule } from './database/prisma.module';
 import { CategoryModule } from './category/category.module';
 import { UserModule } from './user/user.module';
+import { ChallengeModule } from './challenge/challenge.module';
 
 @Module({
-  imports: [ConfigModule.forRoot({ isGlobal: true }), PrismaModule, CategoryModule, UserModule],
+  imports: [
+    ConfigModule.forRoot({ isGlobal: true }),
+    PrismaModule,
+    CategoryModule,
+    UserModule,
+    ChallengeModule,
+  ],
   controllers: [AppController],
   providers: [AppService],
 })
