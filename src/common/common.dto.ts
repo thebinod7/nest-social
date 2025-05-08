@@ -18,6 +18,6 @@ export class BasePaginationDto {
   @IsNumber()
   @IsNotEmpty()
   @IsOptional()
-  @ApiProperty({ required: false, example: 20 })
+  @ApiProperty({ required: false, example: 10 })
   perPage?: number;
 }
