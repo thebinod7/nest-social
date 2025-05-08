@@ -54,4 +54,12 @@ npx prisma generate
 pnpm dev
 ```
 
-Visit http://localhost:8085/swagger for API doc.
+### 8. Visit API Documenation
+
+`http://localhost:8085/swagger`
+
+### Loom Video Demo
+
+````
+https://www.loom.com/share/70ac40bda0a4483b9f06756b6d3757f2?sid=97f8a6ec-268b-4c07-ab37-d119b26deb9b```
+````
