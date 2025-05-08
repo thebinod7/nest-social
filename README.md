@@ -11,9 +11,10 @@ Follow these steps to set up the project locally:
 ### 1. Clone the Repository
 
 ```bash
-git clonehttps://github.com/thebinod7/nest-social.git
-cd your-repo
+git clone https://github.com/thebinod7/nest-social.git
 ```
+
+`cd your-repo`
 
 ### 2. Install Dependencies
 
