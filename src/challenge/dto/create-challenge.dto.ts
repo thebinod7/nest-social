@@ -47,14 +47,14 @@ export class CreateChallengeDto {
 
   @IsString()
   @ApiProperty({
-    example: 'cmaeo5dv00000a5q18ylx6eix',
+    example: 'cmaepokmm0001a5tyvcheqqj0',
     description: 'Category ID',
   })
   categoryId: string;
 
   @IsString()
   @ApiProperty({
-    example: 'cmaeoo6a50000a5gwuyk314ql',
+    example: 'cmaepor3n0003a5tyzb577559',
     description: 'Creator ID',
   })
   creatorId: string;

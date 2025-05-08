@@ -17,6 +17,7 @@ model User {
   challenges    Challenge[]         @relation("ChallengeCreator")
   participations ChallengeParticipant[]
 
+  @@map("tbl_users")
 }
 
 model Challenge {
@@ -36,12 +37,16 @@ model Challenge {
   category      Category   @relation(fields: [categoryId], references: [id])
 
   participants  ChallengeParticipant[]
+
+  @@map("tbl_challenges")
 }
 
 model Category {
   id            String     @id @default(cuid())
   name          String     @unique
   challenges    Challenge[]
+
+  @@map("tbl_category")
 }
 
 model ChallengeParticipant {
@@ -54,6 +59,7 @@ model ChallengeParticipant {
   challenge     Challenge  @relation(fields: [challengeId], references: [id])
 
   @@unique([userId, challengeId])
+  @@map("tbl_challenge_participant")
 }
 
 enum Visibility {
